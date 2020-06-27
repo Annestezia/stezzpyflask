@@ -4,11 +4,16 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #444;
   }
+
+  /* elements  styling */
+  a{
+    color: gold;
+  }
   /*
    * Formatting the header area
    */
   header {
-    background-color: #DFB887;
+    background-color: rgb(105, 165, 243);
     height: 35px;
     width: 100%;
     opacity: .9;
@@ -46,6 +51,13 @@ body {
        -moz-border-radius: 6px;
             border-radius: 6px;
   }
+  div.projects {
+    padding: 20px;
+    background-color: #E6E6FA;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+  }
   h2 {
     font-size: 3em;
     margin-top: 40px;
@@ -73,4 +85,17 @@ body {
   .menu li a {
     color: #444;
     text-decoration: none;
+  }
+  .menu li.active {
+    color: rgb(202, 19, 19);
+    text-decoration: none;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+    min-height: 2.3rem;
+    background-color: rgb(42, 54, 77);
+    color: #cecece;
   }

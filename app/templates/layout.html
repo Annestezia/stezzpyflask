@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Flask app</title>
+        <title>My Flask app</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     </head>
     <body>
     <header>
       <div class="container">
-        <h1 class="logo">Annestezia's web app</h1>
+        <h1 class="logo">Annestezia</h1>
         <strong><nav>
           <ul class="menu">
             <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('projects') }}">Projects</a></li>
           </ul>
         </nav></strong>
       </div>
@@ -20,5 +21,17 @@
         {% block content %}
         {% endblock %}
     </div>
+    <footer>
+      <div class="footer-links">
+        <a href="#">Github</a>
+        <a href="#">FCC</a>
+      </div>      
+      <div class="footer-contacts">
+        <address>
+          E-mail: <a href="mailto:anastasia.v.vlasova@gmail.com">Annestezia</a><br>
+          telegram: @notimetofly
+        </address> 
+      </div>
+    </footer>
   </body>
 </html>
