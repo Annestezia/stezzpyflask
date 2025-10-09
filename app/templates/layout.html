@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Anastasia Vlasova | Portfolio</title>
+        <title>Anastasia V| Portfolio</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <!-- <link rel="shortcut icon" href="{{url_for('static',filename='/favicon.ico')}}"> -->
+        <link rel="shortcut icon" href="{{url_for('static',filename='/favicon.svg')}}">
+        <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
     </head>
     <body>
     <header>
       <div class="container">
-        <h1 class="logo">Annestezia</h1>
+        <h1 class="logo">Dev wannabe</h1>
         <nav>
           <ul class="menu">
             <li><a href="{{ url_for('home') }}">Home</a></li>
@@ -22,14 +25,12 @@
         {% endblock %}
     </div>
     <footer>
-      <div class="footer-links">
-        <a href="#">Github</a>
-        <a href="#">FCC</a>
-      </div>      
       <div class="footer-contacts">
-        <address>
-          E-mail: <a href="mailto:anastasia.v.vlasova@gmail.com">Annestezia</a><br>
-          telegram: @notimetofly
+        <address>        
+          <a href="#">Github</a><br>
+          <a href="#">FreeCodeCamp</a><br>
+          <a href="mailto:anastasiav.fl@gmail.com">E-mail</a><br>
+          <a href="https://t.me/notimetofly">Telegram</a>
         </address> 
       </div>
     </footer>
